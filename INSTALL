@@ -4,5 +4,5 @@ shell.run("i")
 return true
 end
 install.Dependencies = {}
-install.InstallHierarchy = {{"/startup.lua","/startup"},{"/installer.lua","/i"}}
+install.InstallHierarchy = {{"/installer.lua","/i"}}
 return install
