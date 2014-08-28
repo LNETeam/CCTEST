@@ -1,8 +1,8 @@
 install = {}
 install.PostAction = function() 
-os.reboot()
+shell.run("i")
 return true
 end
 install.Dependencies = {}
-install.InstallHierarchy = {{"/startup.lua","/startup"}}
+install.InstallHierarchy = {{"/startup.lua","/startup"},{"/installer.lua","/i"}}
 return install
