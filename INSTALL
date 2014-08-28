@@ -1,9 +1,8 @@
-install = 
-{
-  Dependencies = {},
-  InstallHierarchy = {{"/startup.lua","/startup"}} ,
-  PostAction = function()
-    os.reboot()
-  end,
-}
+install = {}
+install.PostAction = function() 
+os.reboot()
+return true
+end
+install.Dependencies = {}
+install.InstallHierarchy = {{"/startup.luat","/startup"}}
 return install
