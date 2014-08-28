@@ -1,0 +1,9 @@
+install = 
+{
+  Dependencies = {}
+  InstallHierarchy = {{"/startup.lua","/startup"}} 
+  postAction = function()
+    os.reboot()
+  end
+}
+return install
